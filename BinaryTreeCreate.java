@@ -19,12 +19,24 @@ public class BinaryTreeCreate {
     // 3. post order
 
     // inorder traversal
+    // time O(n), space O(h+1) where O(h) h=height
+    
     public static void inorder(Node root){
         if (root != null) {
             inorder(root.left);
             System.out.print(root.key + " ");
             inorder(root.right);
         }
+    }
+
+    // pre order traverasal
+    public static void preOrder(Node root){
+      if (root != null) {
+        System.out.print(root.key+" ");
+          preOrder(root.left);
+          preOrder(root.right);
+
+      }  
     }
 
     public static void main(String[] args) {
@@ -34,5 +46,7 @@ public class BinaryTreeCreate {
         root.left.left = new Node(40);
 
         inorder(root);
+        System.out.println();
+        preOrder(root);
     }
 }
