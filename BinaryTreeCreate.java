@@ -160,6 +160,31 @@ public class BinaryTreeCreate {
         }
     } 
 
+    // iterative pre order space optamized
+    public static void iterativespaceOptPreOrder(Node root){
+        if (root == null) {
+            return;
+        }
+        Stack<Node> st = new Stack<Node>();
+        st.push(root);
+        Node curr = root;
+
+
+        while (st.isEmpty() == false) {
+            while (curr != null) {
+                System.out.print(curr.key+" ");
+                if (curr.right != null) 
+                    st.push(curr.right);
+                    
+                
+                curr = curr.left;
+            }
+
+            curr = st.pop();
+            
+        }
+    } 
+
     public static void main(String[] args) {
         Node root = new Node(10);
         root.left = new Node(20);
@@ -192,6 +217,9 @@ public class BinaryTreeCreate {
 
         System.out.println();
         iterativepreOrder(root);
+
+        System.out.println();
+        iterativespaceOptPreOrder(root);
         
     }
 }
