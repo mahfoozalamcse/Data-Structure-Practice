@@ -59,6 +59,22 @@ public class BinaryTreeCreate {
         return Math.max(height(root.left), height(root.right)) + 1;
     }
 
+    //print node at k distance in tree
+
+    public static void kthNode(Node root, int k){
+        if (root == null)
+        {
+          return;
+        }
+        if (k == 0) {
+            System.out.print(root.key+" ");
+        }else{
+            kthNode(root.left, k-1);
+            kthNode(root.right, k-1);
+        }
+    }
+
+
     public static void main(String[] args) {
         Node root = new Node(10);
         root.left = new Node(20);
@@ -72,6 +88,9 @@ public class BinaryTreeCreate {
         postOrder(root);
 
         System.out.println();
-        System.out.println(height(root));
+        System.out.print(height(root));
+
+        System.out.println();
+        kthNode(root, 1);
     }
 }
