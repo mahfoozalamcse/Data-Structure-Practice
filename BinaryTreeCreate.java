@@ -105,12 +105,21 @@ public class BinaryTreeCreate {
       }
     }
 
-    // size of binary tree
+    // size of binary tree time O(n) and space O(h)
     public static int sizeTree(Node root){
         if (root == null) {
             return 0;
         }
         return (sizeTree(root.left) + sizeTree(root.right) + 1);
+    }
+
+    // maximum in binary tree
+    public static int maxNode(Node root){
+        if (root == null) {
+            return Integer.MIN_VALUE;
+        }else{
+          return Math.max(root.key,Math.max(maxNode(root.left), maxNode(root.right)));
+        } 
     }
 
     public static void main(String[] args) {
@@ -136,6 +145,9 @@ public class BinaryTreeCreate {
 
         System.out.println();
         System.out.print(sizeTree(root)+" ");
+
+        System.out.println();
+        System.out.println(maxNode(root)+" ");
         
     }
 }
