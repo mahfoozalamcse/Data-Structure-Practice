@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinaryTreeCreate {
     // create binary tree
     public static class Node{
@@ -59,7 +62,7 @@ public class BinaryTreeCreate {
         return Math.max(height(root.left), height(root.right)) + 1;
     }
 
-    //print node at k distance in tree
+    //print node at k distance in tree time O(n) and space O(h)
 
     public static void kthNode(Node root, int k){
         if (root == null)
@@ -74,6 +77,33 @@ public class BinaryTreeCreate {
         }
     }
 
+    // level order traversal in tree
+    // not efficient use 1. find height 2. k node print
+
+    // efficient solution use Queue data structure
+
+    // time complexity O(n) space(width)
+
+    public static void levelOrderTraverse(Node root){
+      if (root == null) {
+        return;
+      }
+      Queue<Node> q = new LinkedList<Node>();
+      q.add(root);
+
+      while (q.isEmpty() == false) {
+        
+         Node curr = q.poll();
+         System.out.print(curr.key+" ");
+
+         if (curr.left != null) {
+            q.add(curr.left);
+         }
+         if (curr.right != null) {
+            q.add(curr.right);
+         }
+      }
+    }
 
     public static void main(String[] args) {
         Node root = new Node(10);
@@ -92,5 +122,9 @@ public class BinaryTreeCreate {
 
         System.out.println();
         kthNode(root, 1);
+
+        System.out.println();
+        levelOrderTraverse(root);
+        
     }
 }
