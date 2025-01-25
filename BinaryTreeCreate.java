@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Stack;
 
 public class BinaryTreeCreate {
     // create binary tree
@@ -122,6 +123,26 @@ public class BinaryTreeCreate {
         } 
     }
 
+    // iterative inorder traverasal time O(n) space O(h)
+    public static void iterativeinOrder(Node root){
+        if (root == null) {
+            return;
+        }
+        Stack<Node> st = new Stack<Node>();
+        Node curr = root;
+
+
+        while (curr != null  || st.isEmpty() == false) {
+            while (curr != null) {
+                st.push(curr);
+                curr = curr.left;
+            }
+            curr = st.pop();
+            System.out.print(curr.key+" ");
+            curr = curr.right;
+        }
+    } 
+
     public static void main(String[] args) {
         Node root = new Node(10);
         root.left = new Node(20);
@@ -148,6 +169,9 @@ public class BinaryTreeCreate {
 
         System.out.println();
         System.out.println(maxNode(root)+" ");
+
+        System.out.println();
+        iterativeinOrder(root);
         
     }
 }
