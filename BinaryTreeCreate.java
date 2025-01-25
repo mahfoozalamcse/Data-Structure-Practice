@@ -123,7 +123,24 @@ public class BinaryTreeCreate {
         } 
     }
 
-    // iterative inorder traverasal time O(n) space O(h)
+    // iterative preorder traverasal time O(n) space O(h)
+    public static void iterativepreOrder(Node root){
+        if (root == null) {
+            return;
+        }
+        Stack<Node> st = new Stack<Node>();
+        st.push(root);
+        
+        while (st.isEmpty() == false) {
+           Node curr = st.pop();
+           System.out.print(curr.key+ " "); 
+           if(curr.right != null) st.push(curr.right);
+           if(curr.left != null) st.push(curr.left);
+        
+        }
+    } 
+
+    // iterative in order traversal
     public static void iterativeinOrder(Node root){
         if (root == null) {
             return;
@@ -172,6 +189,9 @@ public class BinaryTreeCreate {
 
         System.out.println();
         iterativeinOrder(root);
+
+        System.out.println();
+        iterativepreOrder(root);
         
     }
 }
