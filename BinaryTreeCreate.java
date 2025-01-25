@@ -92,7 +92,7 @@ public class BinaryTreeCreate {
       q.add(root);
 
       while (q.isEmpty() == false) {
-        
+
          Node curr = q.poll();
          System.out.print(curr.key+" ");
 
@@ -103,6 +103,14 @@ public class BinaryTreeCreate {
             q.add(curr.right);
          }
       }
+    }
+
+    // size of binary tree
+    public static int sizeTree(Node root){
+        if (root == null) {
+            return 0;
+        }
+        return (sizeTree(root.left) + sizeTree(root.right) + 1);
     }
 
     public static void main(String[] args) {
@@ -125,6 +133,9 @@ public class BinaryTreeCreate {
 
         System.out.println();
         levelOrderTraverse(root);
+
+        System.out.println();
+        System.out.print(sizeTree(root)+" ");
         
     }
 }
