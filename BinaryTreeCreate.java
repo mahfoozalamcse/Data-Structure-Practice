@@ -11,7 +11,7 @@ public class BinaryTreeCreate {
 
          Node(int data){
             key = data;
-            // here by default assign null both
+            // here by default assign null both 
             // left and right in java
 
          }
