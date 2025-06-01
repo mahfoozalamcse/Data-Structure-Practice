@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class BinaryTreeCreate {
     // create binary tree
-    public static class Node{
+    public static class Node{ 
          int key; 
          Node left;
          Node right;
