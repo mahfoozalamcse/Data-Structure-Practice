@@ -68,6 +68,7 @@ public class InsertionTree {
            }
        }
        System.out.println();
+       
     }
     public static void main(String[] args) {
       TreeNode root = new TreeNode(10);
