@@ -18,6 +18,7 @@ public class BinaryTreeCreate {
          }
     }
 
+    
     // traversal on tree
     // 1. inorder
     // 2. preorder
