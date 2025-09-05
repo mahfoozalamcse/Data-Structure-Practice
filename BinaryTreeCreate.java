@@ -2,6 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
+
 public class BinaryTreeCreate {
     // create binary tree
     public static class Node{ 
@@ -17,6 +18,7 @@ public class BinaryTreeCreate {
          }
     }
 
+    
     // traversal on tree
     // 1. inorder
     // 2. preorder
