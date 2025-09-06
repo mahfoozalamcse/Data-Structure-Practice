@@ -3,6 +3,8 @@ package practice1;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// delete tree code
+
 public class DeleteBinaryTree {
     static class Node{
         int data;
