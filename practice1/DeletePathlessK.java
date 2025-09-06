@@ -57,7 +57,7 @@ public class DeletePathlessK {
         
         System.out.println(" Before : ");
         inorder(root);
-        
+
         int K = 10;
         root = deletePath(root, K);
 
