@@ -1,5 +1,5 @@
 package practice1;
-// Question: Delete All Half Nodes in a Binary Tree
+// Question: Delete All Half Nodes in a Binary Tree(Nodes with only one child deleted this code)
 
 public class DeleteHalfNode {
     static class Node{
