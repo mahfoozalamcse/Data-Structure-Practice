@@ -1,5 +1,7 @@
 package practice1;
 
+// Delete leaves with a given value
+
 public class DeleteLeaf {
     static class Node {
         int data;
