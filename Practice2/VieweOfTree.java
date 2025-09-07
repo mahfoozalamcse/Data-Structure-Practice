@@ -129,6 +129,48 @@ public class VieweOfTree {
       }
 
     }
+
+    // practice bottom views of tree
+    static void printBottom(Node root){
+        if (root == null) {
+            return;
+        }
+
+        class Pair{
+            Node node;
+            int hd;
+            Pair(Node n, int h){
+                node = n;
+                hd = h;
+            }
+        }
+
+        Queue<Pair> q = new LinkedList<>();
+        Map<Integer, Integer> mp = new TreeMap<>(); // kep keys in sort order
+        q.add(new Pair(root, 0));
+
+        while (!q.isEmpty()) {
+            Pair p = q.poll();
+            Node curr = p.node;
+            int hd = p.hd;
+
+            // keep update till last element will remain only
+            mp.put(hd, curr.data);
+
+            if (curr.left != null) {
+                q.add(new Pair(curr.left, hd-1));
+            }
+
+            if (curr.right != null) {
+                q.add(new Pair(curr.right, hd+1));
+            }
+        }
+
+        // traverse map and print
+        for(int val : mp.values()){
+            System.out.print(val + " ");
+        }
+    }
     
     public static void main(String[] args) {
         /*
@@ -163,6 +205,10 @@ public class VieweOfTree {
         System.out.println();
         System.out.println(" Print top Views of tree : ");
         printTopView(root);
+
+        System.out.println();
+        System.out.println(" Print Bottom view of tree : ");
+        printBottom(root);
 
 
     }
