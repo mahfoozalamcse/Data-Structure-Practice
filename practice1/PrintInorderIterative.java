@@ -3,6 +3,7 @@ package practice1;
 import java.util.Stack;
 
 public class PrintInorderIterative {
+    
     static class Node {
         int data;
         Node left, right;
