@@ -3,6 +3,7 @@ Learn and practice Tree in  java
 
 chapter 1 : Tree Data Structure 
 
+BinaryTreeCreate.java - Create tree and print traversal all way other basic operation
 
 DeleteBST.java – Deletion operation in a Binary Search Tree (BST).
 
