@@ -34,3 +34,6 @@ LevelOrder.java – Perform level-order traversal; also find min, max, and size 
 PrintInorderIterative.java – Iterative inorder, preorder, and diameter of the tree; also find LCA (Lowest Common Ancestor).
 
 BinaryTreeCreate.java – Create and initialize a binary tree.
+
+Practice 2 :
+    print Left , right, bottom and Top view in tree
