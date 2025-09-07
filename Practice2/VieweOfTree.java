@@ -186,6 +186,7 @@ public class VieweOfTree {
          * bottom : 4, 2, 6, 3, 7
          * 
          */
+        
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
