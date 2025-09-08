@@ -31,4 +31,4 @@ chapter 1 :
 
 14. Delete Leaves with a Given Value – Postorder + target
 
-Delete Middle Node of Linked List – Follow-up exercise from tree practice
+15. Delete Middle Node of Linked List – Follow-up exercise from tree practice
