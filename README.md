@@ -1,39 +1,34 @@
 # Tree-Data-Structure
 Learn and practice Tree in  java 
 
-chapter 1 : Tree Data Structure 
+chapter 1 : 
 
-BinaryTreeCreate.java - Create tree and print traversal all way other basic operation
+1. Create Binary Tree
 
-DeleteBST.java – Deletion operation in a Binary Search Tree (BST).
+2. Inorder Traversal – Recursive & Iterative
 
-DeleteBinaryTree.java – Code for deleting an entire binary tree.
+3. Preorder Traversal – Recursive & Iterative
 
-DeleteForest.java – Solve the LeetCode 1110: Delete Nodes and Return Forest problem.
+4. Postorder Traversal – Recursive & Iterative
 
-DeleteHalfNode.java – Remove nodes having only one child in a tree.
+5. Calculate Height of Tree
 
-DeleteLeaf.java – Delete all leaf nodes from a binary tree.
+6. Find K-th Node
 
-DeleteLinkedListMiddle.java – Delete the middle node of a linked list.
+7. Level Order Traversal
 
-DeleteNthNode.java – Delete the N-th node during inorder traversal.
+8. Find Size of Tree
 
-DeletePathlessK.java – Delete paths shorter than k in a binary tree.
+9. Find Maximum & Minimum Node
 
-DeleteSmallerandGreater.java – Keep nodes only within a given range by removing smaller/greater elements.
+10. Delete Node of a Given Key
 
-DeleteTree.java – Practice deleting a tree step by step.
+11. Delete Binary Tree – Using deepest node + min value approach
 
-DepthTree.java – Calculate tree depth and print k distance nodes using DFS and BFS.
+12. Delete Nodes and Return Forest (LeetCode 1110)
 
-InsertionTree.java – Insert operation in a Binary Tree.
+13. Delete All Half Nodes – Remove nodes with only one child
 
-LevelOrder.java – Perform level-order traversal; also find min, max, and size of the tree.
+14. Delete Leaves with a Given Value – Postorder + target
 
-PrintInorderIterative.java – Iterative inorder, preorder, and diameter of the tree; also find LCA (Lowest Common Ancestor).
-
-BinaryTreeCreate.java – Create and initialize a binary tree.
-
-Practice 2 :
-    print Left , right, bottom and Top view in tree
+Delete Middle Node of Linked List – Follow-up exercise from tree practice
