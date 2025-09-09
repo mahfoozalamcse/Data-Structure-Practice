@@ -9,6 +9,7 @@ public class MirrorOfTree {
             left = right = null;
         }
     }
+    
 
     // mirrorr method
     static Node printMirror(Node root){
