@@ -8,6 +8,7 @@ public class DeleteNthNode {
         Node(int val) {
             data = val;
             left = right = null;
+            
         }
     }
     static Node root;
