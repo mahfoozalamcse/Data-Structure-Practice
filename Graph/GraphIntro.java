@@ -5,14 +5,17 @@ import java.util.List;
 
 public class GraphIntro {
 
-    static class Graph1 { // <-- made static
+    static class Graph1 { 
         private final int V; // number of vertices
         private final List<Integer>[] adjList; // adjacency list
 
         // constructor
         Graph1(int v) {
             this.V = v;
-            adjList = new LinkedList[v];
+            // adjList = new LinkedList[v];
+            @SuppressWarnings("unchecked")
+            List<Integer>[] temp = (List<Integer>[]) new LinkedList[v];
+            adjList = temp;
 
             for (int i = 0; i < v; i++) {
                 adjList[i] = new LinkedList<>();
