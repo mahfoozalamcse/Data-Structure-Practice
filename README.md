@@ -32,27 +32,28 @@ chapter 1 :
 14. Delete Leaves with a Given Value – Postorder + target
 
 15. Delete Middle Node of Linked List – Follow-up exercise from tree practice
-  
-16. Delete N-th Node in Tree
 
-17. Delete Path with Sum < k
+Day 2 ->
+17. Delete N-th Node in Tree
 
-18. Delete Smaller/Greater Nodes in Tree
+18. Delete Path with Sum < k
 
-19. Delete Entire Tree (Make Empty)
+19. Delete Smaller/Greater Nodes in Tree
 
-20. Print Maximum Depth of Tree
+20. Delete Entire Tree (Make Empty)
 
-21. Print K-distance Nodes – using both DFS and BFS
+21. Print Maximum Depth of Tree
 
-22. Insertion in Tree – Level Order + Recursive
+22. Print K-distance Nodes – using both DFS and BFS
 
-23. Find Size of Each Level
+23. Insertion in Tree – Level Order + Recursive
 
-24. Find Maximum Breadth of Tree
+24. Find Size of Each Level
 
-25. Iterative Inorder Traversal
+25. Find Maximum Breadth of Tree
 
-26. Iterative Preorder Traversal
+26. Iterative Inorder Traversal
 
-27. Find Lowest Common Ancestor (LCA)
+27. Iterative Preorder Traversal
+
+28. Find Lowest Common Ancestor (LCA)
