@@ -19,7 +19,8 @@ public class PrintVerticalTree {
                 left = right = null;
             }
         }
-  
+
+    
         static void printVertical(Node root){
             if (root == null) {
                 return;
