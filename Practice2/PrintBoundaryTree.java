@@ -14,6 +14,7 @@ public class PrintBoundaryTree {
             left = right = null;
         }
     }
+    
     // print boundary view code
 
     // check leaf
