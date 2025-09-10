@@ -13,6 +13,7 @@ public class IndenticalTree {
             left = right = null;
         }
     }
+    
 
     static boolean isIdentical(Node root1, Node root2) {
         // if both null
