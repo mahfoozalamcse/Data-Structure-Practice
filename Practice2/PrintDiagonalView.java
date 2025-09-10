@@ -8,7 +8,6 @@ import java.util.Queue;
 import java.util.TreeMap;
 
 // public class PrintDiagonalView of tree
-
 public class PrintDiagonalView {
     static class Node{
         int data;
