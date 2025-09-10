@@ -13,7 +13,6 @@ public class ThreadedBinaryTree {
             rightThread = false;
         }
     }
-
     // insert threaded tree
     static Node insert(Node root, int key) {
         Node point = root;
