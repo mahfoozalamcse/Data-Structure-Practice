@@ -1,4 +1,4 @@
-# Data Structure Practice — 200 Hours DSA Challenge 🚀
+# Data Structure Practice — 200 Hours DSA Challenge 
 
 This repository tracks my 200 Hours Data Structures & Algorithms Challenge, where I dedicate 6–8 hours daily to solving problems, mastering concepts, and sharing progress.
 
