@@ -34,6 +34,7 @@ public class BinaryTreeToDLL {
         }
 
         prev = root;  // move prev to curr
+        
 
         conertTreeToDLL(root.right);
     }
