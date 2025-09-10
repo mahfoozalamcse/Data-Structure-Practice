@@ -10,7 +10,6 @@ public class MirrorOfTree {
         }
     }
     
-
     // mirrorr method
     static Node printMirror(Node root){
         if (root == null) {
