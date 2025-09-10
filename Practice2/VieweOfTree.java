@@ -16,7 +16,6 @@ public class VieweOfTree {
             left = right = null;
         }
     }
-
     // left left view of tree
     static void printLeftView(Node root){
         if (root == null) {
