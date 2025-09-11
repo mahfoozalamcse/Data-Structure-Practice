@@ -61,6 +61,23 @@ Problems solved:
 
 ---
 
+Chapter 4 — Graphs (Day 4: 32/200 Hours)  
+
+In this chapter, I explored graph fundamentals and algorithms. Problems solved:  
+
+1. Articulation Point in Graph 
+2. Bellman-Ford Algorithm in graph  
+3. Bridge Edges in Graph 
+4. Cycle Detection in Directed Graph
+5. Cycle Detection in Undirected Graph  
+6. DFS Traversal in Graph
+7. Dijkstras Algorithm
+8. Create Directed Graph & Print Graph  
+9. Floyd-Warshall Algorithm
+
+---
+
+
  Repository Link
  [Data-Structure-Practice](https://github.com/mahfoozalamcse/Data-Structure-Practice)
 
