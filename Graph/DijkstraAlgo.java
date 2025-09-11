@@ -74,6 +74,7 @@ public class DijkstraAlgo {
         
         DijkstraAlgo g = new DijkstraAlgo(5);
 
+        
         g.addEdge(0, 1, 10);
         g.addEdge(0, 4, 5);
         g.addEdge(1, 2, 1);

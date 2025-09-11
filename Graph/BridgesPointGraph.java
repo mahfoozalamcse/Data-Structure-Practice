@@ -68,5 +68,6 @@ public class BridgesPointGraph {
         for (int[] b : bridges)
             System.out.println(b[0] + " - " + b[1]);
         // Expected bridges: 0-3 and 3-4
+        
     }
 }

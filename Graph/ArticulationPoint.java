@@ -57,6 +57,7 @@ public class ArticulationPoint {
                 low[u] = Math.min(low[u], disc[v]);
             }
         }
+        
 
         // If u is root and has two or more children.
         if (parent == -1 && children > 1)

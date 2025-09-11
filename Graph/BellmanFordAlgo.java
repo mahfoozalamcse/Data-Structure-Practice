@@ -69,6 +69,7 @@ public class BellmanFordAlgo {
         System.out.println(" Shortest distance form " + src + " Destination : "+ Arrays.toString(dist));
         
     }
+    
     public static void main(String[] args) {
         int V = 5, E = 8;
         BellmanFordAlgo g = new BellmanFordAlgo(V, E);

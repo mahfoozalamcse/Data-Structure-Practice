@@ -40,5 +40,6 @@ public class DirectedGraph {
         g.addEdge(2, 4);
 
         g.printGraph();
+        
     }
 }

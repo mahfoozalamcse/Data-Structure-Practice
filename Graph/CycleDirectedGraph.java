@@ -40,6 +40,7 @@ public class CycleDirectedGraph {
       return false;
     }
 
+
     boolean isCycle(){
         boolean visited[] = new boolean[V];
         boolean recStack[] = new boolean[V];
@@ -51,6 +52,7 @@ public class CycleDirectedGraph {
         }
         return false;
     }
+    
     public static void main(String[] args) {
         CycleDirectedGraph g = new CycleDirectedGraph(4);
         g.addEdge(0, 1);
