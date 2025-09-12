@@ -5,7 +5,7 @@ import java.util.List;
 
 public class GraphIntro {
 
-    static class Graph1 { 
+    static class Graph1 {
         private final int V; // number of vertices
         private final List<Integer>[] adjList; // adjacency list
 

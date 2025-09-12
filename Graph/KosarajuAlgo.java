@@ -14,7 +14,8 @@ public class KosarajuAlgo {
     public KosarajuAlgo(int v) {
         V = v;
         adj = new LinkedList[v];
-        for (int i = 0; i < v; i++) adj[i] = new LinkedList<>();
+        for (int i = 0; i < v; i++)
+            adj[i] = new LinkedList<>();
     }
 
     public void addEdge(int u, int v) { // directed edge u -> v
@@ -22,21 +23,21 @@ public class KosarajuAlgo {
     }
 
     // helper fill order
-    void fillOrder(int v, boolean visited[], Stack<Integer> st){
-       visited[v] = true;
-       for(int neighbors : adj[v]){
-        if (!visited[neighbors]) {
-            fillOrder(neighbors, visited, st);
+    void fillOrder(int v, boolean visited[], Stack<Integer> st) {
+        visited[v] = true;
+        for (int neighbors : adj[v]) {
+            if (!visited[neighbors]) {
+                fillOrder(neighbors, visited, st);
+            }
         }
-       }
-       st.push(v);  // finish with v
+        st.push(v); // finish with v
     }
 
     // reverse get transpose
-    KosarajuAlgo getTranspose(){
+    KosarajuAlgo getTranspose() {
         KosarajuAlgo gt = new KosarajuAlgo(V);
-        for(int v= 0; v<V; v++){
-            for(int neighbors : adj[v]){
+        for (int v = 0; v < V; v++) {
+            for (int neighbors : adj[v]) {
                 gt.addEdge(neighbors, v); // reverse edge
             }
         }
@@ -47,7 +48,7 @@ public class KosarajuAlgo {
         visited[v] = true;
         comp.add(v);
         for (int neighbours : adj[v]) {
-            if (!visited[neighbours]){
+            if (!visited[neighbours]) {
                 dfsUtil(neighbours, visited, comp);
             }
         }
@@ -60,9 +61,9 @@ public class KosarajuAlgo {
 
         // 1. Fill vertices in stack according to their finishing times
         for (int i = 0; i < V; i++) {
-           if (!visited[i]){
-            fillOrder(i, visited, stack);
-           }
+            if (!visited[i]) {
+                fillOrder(i, visited, stack);
+            }
         }
 
         // 2. Create transpose graph
@@ -94,6 +95,6 @@ public class KosarajuAlgo {
         List<List<Integer>> sccs = g.getSCCs();
         System.out.println("Strongly Connected Components: ");
         for (List<Integer> scc : sccs)
-            System.out.println(scc);  
+            System.out.println(scc);
     }
 }

@@ -37,38 +37,38 @@ public class KrushakalAlgo {
     }
 
     int find(int parent[], int i) {
-       if (parent[i] == i) {
-          return i;
-       }
-       return parent[i] = find(parent, parent[i]); // path reduce
+        if (parent[i] == i) {
+            return i;
+        }
+        return parent[i] = find(parent, parent[i]); // path reduce
 
     }
 
-    //  helper kruskal's union method
-    void union(int parent[], int rank[], int x, int y){
+    // helper kruskal's union method
+    void union(int parent[], int rank[], int x, int y) {
         int xRoot = find(parent, x);
         int yRoot = find(parent, y);
 
         if (rank[xRoot] < rank[yRoot]) {
             parent[xRoot] = yRoot;
-        }else if (rank[xRoot] > rank[yRoot]) {
+        } else if (rank[xRoot] > rank[yRoot]) {
             parent[yRoot] = xRoot;
-        }else{
+        } else {
             parent[yRoot] = xRoot;
             rank[xRoot]++;
         }
     }
 
     // kruskal main method
-    void kruskalMST(){
+    void kruskalMST() {
         Arrays.sort(edges);
-        Edge[] ans  = new Edge[V-1];
-        int e = 0,  i = 0;
+        Edge[] ans = new Edge[V - 1];
+        int e = 0, i = 0;
 
         int parent[] = new int[V];
         int rank[] = new int[V];
 
-        for(int v=0; v<V; v++){
+        for (int v = 0; v < V; v++) {
             parent[v] = v;
             rank[v] = 0;
         }
@@ -87,12 +87,12 @@ public class KrushakalAlgo {
 
         System.out.println(" Edge in kruskal MST : ");
         int minCost = 0;
-        for(i=0; i<e; i++){
-           System.out.println(ans[i].src + " - " + ans[i].des + " : "+ ans[i].weight);
-           minCost += ans[i].weight;
+        for (i = 0; i < e; i++) {
+            System.out.println(ans[i].src + " - " + ans[i].des + " : " + ans[i].weight);
+            minCost += ans[i].weight;
         }
 
-        System.out.println(" Minimum cost : "+ minCost);
+        System.out.println(" Minimum cost : " + minCost);
     }
 
     public static void main(String[] args) {

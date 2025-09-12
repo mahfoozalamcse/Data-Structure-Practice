@@ -7,22 +7,22 @@ public class GraphBFSTraversal {
     private int V; // for vertex
     private LinkedList<Integer>[] adjList; // for adjecency list
 
-    GraphBFSTraversal(int v){
-       V = v;
-       adjList = new LinkedList[v];
-       for(int i=0; i< v; i++){
-        adjList[i] = new LinkedList<>();
-       }
+    GraphBFSTraversal(int v) {
+        V = v;
+        adjList = new LinkedList[v];
+        for (int i = 0; i < v; i++) {
+            adjList[i] = new LinkedList<>();
+        }
     }
 
     // add edges
-    void addEdge(int src, int des){
+    void addEdge(int src, int des) {
         adjList[src].add(des);
         adjList[des].add(src);
     }
 
     // BFS traversal level by level order
-    void BFS(int start){
+    void BFS(int start) {
         boolean visited[] = new boolean[V];
         Queue<Integer> q = new LinkedList<>();
 
@@ -31,9 +31,9 @@ public class GraphBFSTraversal {
 
         while (!q.isEmpty()) {
             int node = q.poll();
-            System.out.print(node+" ");
+            System.out.print(node + " ");
 
-            for(int neighour : adjList[node]){
+            for (int neighour : adjList[node]) {
                 if (!visited[neighour]) {
                     visited[neighour] = true;
                     q.add(neighour);
@@ -44,7 +44,7 @@ public class GraphBFSTraversal {
 
     public static void main(String[] args) {
         GraphBFSTraversal g = new GraphBFSTraversal(5);
-        
+
         g.addEdge(0, 1);
         g.addEdge(0, 2);
         g.addEdge(1, 3);
