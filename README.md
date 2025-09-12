@@ -77,6 +77,21 @@ In this chapter, I explored graph fundamentals and algorithms. Problems solved:
 
 ---
 
+Chapter 5 — Graphs Continued (Day 5: 40/200 Hours)  
+
+In this chapter, I extended graph learning by solving problems on traversal, MSTs, and advanced graph algorithms. Problems solved:  
+
+1. BFS Traversal in Graph
+2. Implement Graph & Print 
+3. Kahns Algorithm (BFS + In-Degree)
+4. Kosarajus Algorithm for Strongly Connected Components (SCCs)
+5. Kruskals Algorithm (Minimum Spanning Tree - MST)
+6. Prims Algorithm (Minimum Spanning Tree - MST)
+7. Topological Sort in Graph
+8. Create & Print Weighted Graph
+
+---
+
 
  Repository Link
  [Data-Structure-Practice](https://github.com/mahfoozalamcse/Data-Structure-Practice)
