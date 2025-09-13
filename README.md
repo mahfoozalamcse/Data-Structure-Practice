@@ -92,6 +92,18 @@ In this chapter, I extended graph learning by solving problems on traversal, MST
 
 ---
 
+Chapter 6 — Graph Connectivity & Cycles (Day 6: 48/200 Hours)  
+
+In this chapter, I practiced problems on **graph components, cycle detection, and pathfinding**. Problems solved:  
+
+1. Count Components in a Graph 
+2. Detect Cycle in Graph (using Kahns Algorithm)
+3. Detect Cycle in Directed Graph(DFS + recursion Stack) 
+4. Check if Graph is Bipartite 
+5. Number of Islands Problem (using DFS/BFS)  
+6. Shortest Unweighted Path in Graph
+
+---
 
  Repository Link
  [Data-Structure-Practice](https://github.com/mahfoozalamcse/Data-Structure-Practice)
