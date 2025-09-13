@@ -37,22 +37,22 @@ public class DetectCycle2 {
     public static void main(String[] args) {
         int V = 3;
         List<Integer>[] adj = new ArrayList[V];
-        for (int i = 0; i < V; i++){
+        for (int i = 0; i < V; i++) {
             adj[i] = new ArrayList<>();
         }
         adj[0].add(1);
         adj[1].add(2);
         adj[2].add(0); // cycle
-        
+
         System.out.println();
-        System.out.println("Is cycle exist : "+isCycle(V, adj)); // true
+        System.out.println("Is cycle exist : " + isCycle(V, adj)); // true
 
         List<Integer>[] adj2 = new ArrayList[3];
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             adj2[i] = new ArrayList<>();
         }
         adj2[0].add(1);
         adj2[1].add(2);
-        System.out.println("Is cycle exist : "+isCycle(3, adj2)); // false
+        System.out.println("Is cycle exist : " + isCycle(3, adj2)); // false
     }
 }
