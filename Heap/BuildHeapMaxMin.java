@@ -21,6 +21,9 @@ public class BuildHeapMaxMin {
          int temp = arr[i];
          arr[i] = arr[largest];
          arr[largest] = temp;
+
+         heapify(arr, n, largest); // recursive call
+         
       }
    }
     public static void buildHeap(int arr[]){
