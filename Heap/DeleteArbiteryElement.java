@@ -29,7 +29,7 @@ public class DeleteArbiteryElement {
     // Heapify Up is used when we insert a new element into a Max Heap.
 
     public static void heapifyUpDirection(int arr[], int i){
-        
+
        int parent = (i-1)/2;
         while (i > 0 && arr[parent] < arr[i]) {
             int temp = arr[i];
@@ -53,7 +53,7 @@ public class DeleteArbiteryElement {
 
       // hepify
       heapify(arr, n, i); // bottom up
-      heapifyUpDirection(arr, i);
+      heapifyUpDirection(arr, i);  // just in case when required
 
       return n;
 
