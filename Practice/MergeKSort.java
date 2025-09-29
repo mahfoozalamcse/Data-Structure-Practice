@@ -20,7 +20,7 @@ public class MergeKSort {
 
         for (int i = n-2; i >= 0; i--) {
             if (rating[i] > rating[i+1]) {
-                right[i] = left[i+1] + 1;
+                right[i] = right[i+1] + 1;
             }
         }
 
