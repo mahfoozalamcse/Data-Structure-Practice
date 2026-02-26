@@ -14,6 +14,7 @@ public class MinCostClimbStairs {
       if (currStep >= cost.length) {
          return 0;
       }
+        
 
       int currCost = cost[currStep];
       int minCostNext = Math.min(findMin(cost, currStep+1), findMin(cost, currStep+2));
