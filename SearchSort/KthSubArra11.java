@@ -15,13 +15,13 @@ public class KthSubArra11 {
         int high = n;
         int ans = -1;
         
-        while (low < high) {
+        while (low <= high) {
             int mid = low + (high - low) / 2;
             if (isValid(arr, n, mid, k)) {
                 ans = mid;
                 low = mid + 1;
             }else{
-                high = mid;
+                high = mid - 1;
             }
         }
 
